@@ -1,9 +1,9 @@
 import 'package:currency_converter/core/error/failure.dart';
-import 'package:currency_converter/domain/repositories/list_currency_repository.dart';
+import 'package:currency_converter/domain/repositories/exchange_rate_repository.dart';
 import 'package:dartz/dartz.dart';
 
 class GetExchangeRateUsecase {
-  final ListCurrencyRepository repository;
+  final ExchangeRateRepository repository;
 
   GetExchangeRateUsecase({required this.repository});
 

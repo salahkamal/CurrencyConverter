@@ -1,10 +1,10 @@
 import 'package:currency_converter/core/error/failure.dart';
 import 'package:currency_converter/domain/entities/currency_history.dart';
-import 'package:currency_converter/domain/repositories/list_currency_repository.dart';
+import 'package:currency_converter/domain/repositories/exchange_rate_repository.dart';
 import 'package:dartz/dartz.dart';
 
 class GetAllCurrencyHistoryUsecase {
-  final ListCurrencyRepository repository;
+  final ExchangeRateRepository repository;
 
   GetAllCurrencyHistoryUsecase({required this.repository});
 
