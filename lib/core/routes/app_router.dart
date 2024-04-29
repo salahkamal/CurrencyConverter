@@ -13,11 +13,7 @@ class AppRouter {
   static Route<dynamic> generatedRoute(RouteSettings settings) {
     switch (settings.name) {
       case HomeScreen.routeName:
-        return MaterialPageRoute(
-            builder: (context) => BlocProvider(
-                  create: (context) => di.sl<ListCurrenciesBloc>(),
-                  child: const HomeScreen(),
-                ));
+        return MaterialPageRoute(builder: (context) => const HomeScreen());
       case ListCurrenciesScreen.routeName:
         return MaterialPageRoute(
             builder: (context) => BlocProvider(
